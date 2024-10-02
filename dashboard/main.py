@@ -9,7 +9,6 @@ from babel.numbers import format_currency
 
 # Set styles for seaborn and Streamlit
 sns.set(style='white')
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Load and preprocess the dataset
 datetime_cols = [
