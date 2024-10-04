@@ -1,18 +1,22 @@
 # How To Use Dashboard
 
-## Select Data Range
-You can change the date to see different timestamp of data. Right now it's not working.
+## Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
+## Setup Environment - Shell/Terminal
+```
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
 
-## Daily Order Graph
-Filled with the data about the daily order for each time.
 
-## Order Items Graph
-This graph show you what is the most sold item and the least.
-
-## Review Score
-Show you how satisfied is the customer to our service.
-
-## Customer Demographic
-There are three tab to see, click each tab to see the different graph.# project_analisis_dicoding
-# project_analisis_dicoding
-# project_analisis_dicoding
+## Run steamlit app
+```
+streamlit run dashboard/main.py
+```
